@@ -1,0 +1,283 @@
+.card {
+  width: 356px;
+  margin-bottom: 24px;
+}
+
+.card-text {
+  height: 78px;
+  overflow: hidden;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.card-body {
+  min-height: 153px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-buttons {
+  border-top: 1px solid #EBEBEB;
+  padding: 16px;
+}
+
+.card-buttons .btn {
+  margin-right: 17px;
+}
+
+.card-buttons .btn-outline-secondary {
+  font-weight: 700;
+}
+
+.orange {
+  background: #ED7135;
+  color: white;
+  font-weight: 700;
+}
+
+.orange:hover {
+  background: #ed570b;
+}
+
+.tab {
+  width: 75%;
+  margin-top: 56px;
+}
+
+.tab button {
+  display: block;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #666666;
+  font-weight: 700;
+}
+  
+.tabcontent {
+  width: 100%;
+  max-width: 555px;
+}
+
+.tabcontent-text {
+  font-weight: 700;
+  font-size: 14px;
+  color: #666666;
+}
+
+.photo::before {
+content: url(img/photo.svg);
+}
+
+.active.photo::before {
+content: url(img/photo-white.svg);
+}
+
+.self::before {
+content: url(img/smile.svg);
+}
+
+.active.self::before {
+  content: url(img/smile-white.svg);
+}
+
+.resent::before {
+  content: url(img/clock.svg);
+}
+
+.active.resent::before {
+  content: url(img/clock-white.svg);
+}
+
+.del::before {
+  content: url(img/delete.svg);
+}
+      
+.active.del::before {
+  content: url(img/delete-white.svg);
+}
+
+svg {
+  stroke: #666666;
+}
+
+ 
+.header-nav a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+  text-decoration: none;
+}
+
+.header-nav:hover a{
+  color:#292929;
+}
+
+.nav-but.btn {
+  padding: 0;
+  margin-right: 25px;
+  color: #666666;
+}
+
+.btn-check:checked + .btn {
+  font-weight: 700;
+  background-color: #292929;
+  border: none;
+}
+
+.btn-outline-primary {
+  background: none;
+  border: 2px solid #EBEBEB;
+  color: #292929;
+  font-weight: 700;
+  min-width: 90px;
+}
+
+.btn-outline-primary:hover {
+  border: 2px solid #000;
+}
+
+button.btn.active {
+  border-radius: 0;
+  border-color: none;
+  border: none;
+  border-bottom: 2px solid #ED7135;
+  color: #292929;
+  font-weight: 700;
+}
+
+.form-control {
+  border-radius: 100px;
+  background: #EEEEEE;
+  border: none;
+  padding: 10px 0 10px 40px;
+}
+
+.sign {
+  margin-top: 5px;
+}
+
+.btn-group {
+  height: 73px;
+}
+
+.form-select {
+  border: none;
+  color: #666666;
+}
+
+.has-search {
+  position: relative;
+}
+
+.search-icon { 
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  left: 16px;
+  cursor: pointer
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.tab button.tablinks {
+  display: flex;
+  justify-content: left;
+}
+
+.show-more {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #292929;
+  background: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.card-text {
+  position: relative;
+  color: #666666;
+}
+
+.tablinks.nav-link  {
+  padding: 5px 15px;
+}
+
+.tablinks::before {
+  padding-right: 8px;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.group-radio {
+  height: 40px;
+  margin-top: 10px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1025px) {
+  .dropdown {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .container {
+    position: relative;
+  }
+  .sign {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+  }
+  .dropdown {
+    width: 50%;
+  }
+  .tab {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-section {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+
+[data-bs-theme=dark] .nav-but.btn.active {
+  color: aliceblue;
+}
+
+[data-bs-theme=dark] .light {
+  background: #EBEBEB;
+}
+
+[data-bs-theme=dark] .btn-outline-secondary {
+  background: #666666;
+  border: none;
+}
+
+[data-bs-theme=dark] .show-more {
+  background: #212529;
+  color: #EBEBEB;
+}

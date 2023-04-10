@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="border-bottom col-12">
+        <div class="container d-xl-flex d-md-flex">
+            <div class="col-4">
+                <div class="btn-group col-3" role="group">
+                    <button type="button" class="nav-but btn active">Photos</button>
+                    <button type="button" class="nav-but btn ">Videos</button>
+                    <button type="button" class="nav-but btn ">Podcasts</button>
+                </div>
+            </div>
+
+            <div class="form-group has-search col-lg-6 col-md-5 pt-3">
+                <img src="img/icon.svg" alt="search" class="search-icon">
+                <input type="text" class="form-control" placeholder="Search for anything...">
+            </div>
+            
+            <div class="dropdown pt-3">
+                <select class="form-select">
+                    <option selected>English</option>
+                    <option value="1">German</option>
+                    <option value="3">French</option>
+                  </select>
+            </div>
+            <a href="" class="sign pt-3" > Sign in</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="d-xl-flex d-md-flex">
+            <aside class="col-md-4 col-sm-12">
+                <div class="tab nav nav-pills">
+                    <button class="tablinks nav-link photo" onclick="openTab(event, 'All')">
+                        All photos
+                    </button>
+                    <button class="tablinks nav-link self" onclick="openTab(event, 'Selfies')">
+                        Selfies 
+                    </button>
+                    <button class="tablinks nav-link resent" onclick="openTab(event, 'Resent')">
+                        Resent
+                    </button>
+                    <button class="tablinks nav-link del" onclick="openTab(event, 'Deleted')">
+                        Deleted  
+                    </button>
+                </div> 
+            </aside>
+
+            <main class="col-sm-12 col-md-8 main">
+                <div class="d-md-flex">
+                    <div id="All" class="tabcontent">
+                        <h1>All photos</h1>
+                        <p class="tabcontent-text">150 items</p>
+                    </div>
+                    <div id="Selfies" class="tabcontent">
+                        <h1>Selfies</h1>
+                        <p class="tabcontent-text">120 items</p>
+                    </div>
+                    <div id="Resent" class="tabcontent">
+                        <h1>Resent</h1>
+                        <p class="tabcontent-text">60 items</p>
+                    </div>
+                    <div id="Deleted" class="tabcontent">
+                        <h1>Deleted</h1>
+                        <p class="tabcontent-text">6 items</p>
+                    </div>
+            
+                    <div class="btn-group group-radio" role="group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary light" for="btnradio1">Newest</label>
+                    
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary dark" for="btnradio2">Latest</label>
+                    </div>
+                </div>
+                <div class="card-section d-flex flex-wrap justify-content-md-between justify-content-sm-center">
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
